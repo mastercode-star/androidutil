@@ -1,13 +1,13 @@
 package com.example.androidutil.utilcode;
 
 import android.app.Activity;
+import android.app.Service;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.pm.ActivityInfo;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ServiceInfo;
-
 import androidx.annotation.NonNull;
 
 public final class MetaDataUtils {

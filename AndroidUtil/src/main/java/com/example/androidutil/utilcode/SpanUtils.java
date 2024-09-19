@@ -1,5 +1,7 @@
 package com.example.androidutil.utilcode;
 
+import static android.graphics.BlurMaskFilter.Blur;
+
 import android.annotation.SuppressLint;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -15,6 +17,8 @@ import android.graphics.Typeface;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
+import android.text.Layout;
+import android.text.Layout.Alignment;
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;
 import android.text.TextPaint;
@@ -49,16 +53,18 @@ import androidx.annotation.FloatRange;
 import androidx.annotation.IntDef;
 import androidx.annotation.IntRange;
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 
 import java.io.InputStream;
 import java.io.Serializable;
+import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.ref.WeakReference;
 
 public final class SpanUtils {
 
-    rivate static final int COLOR_DEFAULT = 0xFEFFFFFF;
+    private static final int COLOR_DEFAULT = 0xFEFFFFFF;
 
     public static final int ALIGN_BOTTOM   = 0;
     public static final int ALIGN_BASELINE = 1;

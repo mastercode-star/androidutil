@@ -1,5 +1,7 @@
 package com.example.androidutil.utilcode;
 
+import java.lang.reflect.Type;
+
 public class CloneUtils {
 
     private CloneUtils() {

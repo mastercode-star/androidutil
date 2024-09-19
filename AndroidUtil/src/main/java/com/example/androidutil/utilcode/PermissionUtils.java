@@ -1,5 +1,7 @@
 package com.example.androidutil.utilcode;
 
+import static com.example.androidutil.utilcode.constant.PermissionConstants.PermissionGroup;
+
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Intent;
@@ -13,7 +15,12 @@ import android.util.Pair;
 import android.view.MotionEvent;
 import android.view.WindowManager;
 
-import com.blankj.utilcode.constant.PermissionConstants;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
+import androidx.core.content.ContextCompat;
+
+import com.example.androidutil.utilcode.constant.PermissionConstants;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -21,11 +28,6 @@ import java.util.Collections;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.annotation.RequiresApi;
-import androidx.core.content.ContextCompat;
 
 public final class PermissionUtils {
 

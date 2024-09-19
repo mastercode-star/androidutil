@@ -1,5 +1,12 @@
 package com.example.androidutil.utilcode;
 
+import static android.Manifest.permission.ACCESS_COARSE_LOCATION;
+import static android.Manifest.permission.ACCESS_NETWORK_STATE;
+import static android.Manifest.permission.ACCESS_WIFI_STATE;
+import static android.Manifest.permission.CHANGE_WIFI_STATE;
+import static android.Manifest.permission.INTERNET;
+import static android.content.Context.WIFI_SERVICE;
+
 import android.annotation.SuppressLint;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -35,13 +42,6 @@ import java.util.Set;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.CopyOnWriteArraySet;
-
-import static android.Manifest.permission.ACCESS_COARSE_LOCATION;
-import static android.Manifest.permission.ACCESS_NETWORK_STATE;
-import static android.Manifest.permission.ACCESS_WIFI_STATE;
-import static android.Manifest.permission.CHANGE_WIFI_STATE;
-import static android.Manifest.permission.INTERNET;
-import static android.content.Context.WIFI_SERVICE;
 
 public final class NetworkUtils {
 
@@ -271,7 +271,7 @@ public final class NetworkUtils {
      * @return true if using VPN to conncet to the internet.
      */
     public static boolean isUsingVPN(){
-        ConnectivityManager cm = (ConnectivityManager) com.blankj.utilcode.util.Utils.getApp().getSystemService(Context.CONNECTIVITY_SERVICE);
+        ConnectivityManager cm = (ConnectivityManager) Utils.getApp().getSystemService(Context.CONNECTIVITY_SERVICE);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
             return cm.getNetworkInfo(ConnectivityManager.TYPE_VPN).isConnectedOrConnecting();
         } else {
