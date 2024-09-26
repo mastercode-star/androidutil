@@ -19,3 +19,14 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+-dontwarn com.example.androidutil.**
+
+-keepclassmembers class * {
+    @com.example.androidutil.utilcode.BusUtils$Bus <methods>;
+}
+
+-keep public class * extends com.example.androidutil.utilcode.ApiUtils$BaseApi
+-keep,allowobfuscation @interface com.example.androidutil.utilcode.ApiUtils$Api
+-keep @com.example.androidutil.utilcode.ApiUtils$Api class *
+
+-keepattributes *Annotation*

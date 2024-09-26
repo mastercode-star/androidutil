@@ -14,17 +14,21 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 
-import java.lang.ref.WeakReference;
-import java.lang.reflect.Field;
-import java.util.ArrayList;
-import java.util.List;
-
 import androidx.annotation.AnimRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.app.ActivityOptionsCompat;
 import androidx.core.util.Pair;
 import androidx.fragment.app.Fragment;
+
+import java.lang.ref.WeakReference;
+import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Activity 相关
+ * */
 
 public final class ActivityUtils {
 
@@ -33,6 +37,7 @@ public final class ActivityUtils {
     }
 
     /**
+     * 增加 Activity 生命周期监听
      * Add callbacks of activity lifecycle.
      *
      * @param callbacks The callbacks.
@@ -42,6 +47,7 @@ public final class ActivityUtils {
     }
 
     /**
+     * 增加 Activity 生命周期监听
      * Add callbacks of activity lifecycle.
      *
      * @param activity  The activity.
@@ -53,6 +59,7 @@ public final class ActivityUtils {
     }
 
     /**
+     * 移除 Activity 生命周期监听
      * Remove callbacks of activity lifecycle.
      *
      * @param callbacks The callbacks.
@@ -62,6 +69,7 @@ public final class ActivityUtils {
     }
 
     /**
+     * 移除 Activity 生命周期监听
      * Remove callbacks of activity lifecycle.
      *
      * @param activity The activity.
@@ -71,6 +79,7 @@ public final class ActivityUtils {
     }
 
     /**
+     * 移除 Activity 生命周期监听
      * Remove callbacks of activity lifecycle.
      *
      * @param activity  The activity.
@@ -82,6 +91,7 @@ public final class ActivityUtils {
     }
 
     /**
+     * 根据上下文获取存活的 Activity
      * Return the activity by context.
      *
      * @param context The context.
@@ -134,6 +144,7 @@ public final class ActivityUtils {
     }
 
     /**
+     * 判断 Activity 是否存在
      * Return whether the activity exists.
      *
      * @param pkg The name of the package.
@@ -151,6 +162,7 @@ public final class ActivityUtils {
     }
 
     /**
+     * 启动 Activity
      * Start the activity.
      *
      * @param clz The activity class.
@@ -161,6 +173,7 @@ public final class ActivityUtils {
     }
 
     /**
+     * 启动 Activity
      * Start the activity.
      *
      * @param clz     The activity class.
@@ -173,6 +186,7 @@ public final class ActivityUtils {
     }
 
     /**
+     * 启动 Activity
      * Start the activity.
      *
      * @param clz       The activity class.
@@ -193,6 +207,7 @@ public final class ActivityUtils {
     }
 
     /**
+     * 启动 Activity
      * Start the activity.
      *
      * @param activity The activity.
@@ -204,6 +219,7 @@ public final class ActivityUtils {
     }
 
     /**
+     * 启动 Activity
      * Start the activity.
      *
      * @param activity The activity.
@@ -217,6 +233,7 @@ public final class ActivityUtils {
     }
 
     /**
+     * 启动 Activity
      * Start the activity.
      *
      * @param activity       The activity.
@@ -232,6 +249,7 @@ public final class ActivityUtils {
     }
 
     /**
+     * 启动 Activity
      * Start the activity.
      *
      * @param activity  The activity.
@@ -253,6 +271,7 @@ public final class ActivityUtils {
     }
 
     /**
+     * 启动 Activity
      * Start the activity.
      *
      * @param extras The Bundle of extras to add to this intent.
@@ -265,6 +284,7 @@ public final class ActivityUtils {
     }
 
     /**
+     * 启动 Activity
      * Start the activity.
      *
      * @param extras  The Bundle of extras to add to this intent.
@@ -279,6 +299,7 @@ public final class ActivityUtils {
     }
 
     /**
+     * 启动 Activity
      * Start the activity.
      *
      * @param extras    The Bundle of extras to add to this intent.
@@ -301,6 +322,7 @@ public final class ActivityUtils {
     }
 
     /**
+     * 启动 Activity
      * Start the activity.
      *
      * @param extras   The Bundle of extras to add to this intent.
@@ -314,6 +336,7 @@ public final class ActivityUtils {
     }
 
     /**
+     * 启动 Activity
      * Start the activity.
      *
      * @param extras   The Bundle of extras to add to this intent.
@@ -329,6 +352,7 @@ public final class ActivityUtils {
     }
 
     /**
+     * 启动 Activity
      * Start the activity.
      *
      * @param extras         The Bundle of extras to add to this intent.
@@ -346,6 +370,7 @@ public final class ActivityUtils {
     }
 
     /**
+     * 启动 Activity
      * Start the activity.
      *
      * @param extras    The Bundle of extras to add to this intent.
@@ -369,6 +394,7 @@ public final class ActivityUtils {
     }
 
     /**
+     * 启动 Activity
      * Start the activity.
      *
      * @param pkg The name of the package.
@@ -380,6 +406,7 @@ public final class ActivityUtils {
     }
 
     /**
+     * 启动 Activity
      * Start the activity.
      *
      * @param pkg     The name of the package.
@@ -393,6 +420,7 @@ public final class ActivityUtils {
     }
 
     /**
+     * 启动 Activity
      * Start the activity.
      *
      * @param pkg       The name of the package.
@@ -414,6 +442,7 @@ public final class ActivityUtils {
     }
 
     /**
+     * 启动 Activity
      * Start the activity.
      *
      * @param activity The activity.
